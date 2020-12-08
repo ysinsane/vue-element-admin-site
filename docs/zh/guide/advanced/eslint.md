@@ -44,18 +44,11 @@ module.exports = {
 
 ```json
 {
-  "files.autoSave": "off",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue-html",
-    {
-      "language": "vue",
-      "autoFix": true
+    "files.autoSave": "off",
+    "eslint.run": "onSave",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
     }
-  ],
-  "eslint.run": "onSave",
-  "eslint.autoFixOnSave": true
 }
 ```
 
